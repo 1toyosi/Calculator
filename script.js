@@ -1,7 +1,6 @@
 let display = document.getElementById('display');
 
 let buttons = Array.from(document.getElementsByClassName('button'));
-// console.log(buttons);
 
 buttons.map(button => {
     button.addEventListener('click', (e) => {
@@ -22,7 +21,7 @@ buttons.map(button => {
                 }
                 break;
             default:
-                display.innerText += e.target.innerText;
+               display.innerText += e.target.innerText;
         }
     })
 })
